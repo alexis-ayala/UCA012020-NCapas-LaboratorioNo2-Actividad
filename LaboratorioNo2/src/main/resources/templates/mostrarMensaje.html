@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>N-Capas - Laboratorio No2</title>
+</head>
+<body>
+	<h1>Datos del Usuario</h1>
+	<p th:text="'Nombre: ' + ${usuario.nombre}"></p>
+	<p th:text="'Ocupación ' + ${usuario.ocupacion}"></p>
+	<a href="/agregarUsuario">Regresar</a>
+</body>
+</html>

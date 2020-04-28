@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>N-Capas - Laboratorio No2</title>
+</head>
+<body>
+	<h1>Agregar Usuario</h1>
+	<form action="#" th:action="@{/agregarUsuario}" th:object="${usuario}" method="post">
+		<p>
+			Nombre: <input type="text" th:field="*{nombre}"/>
+		</p>
+		<p>
+			Ocupación: <input type="text" th:field="*{ocupacion}"/>
+		</p>
+		<p>
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Borrar" />
+		</p>
+	</form>
+</body>
+</html>
